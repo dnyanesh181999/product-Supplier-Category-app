@@ -1,0 +1,8 @@
+body{
+    margin: 0%;
+    padding: 0%;
+  background-image: url("./assets/images/pexels-markusspiske-225769.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+}

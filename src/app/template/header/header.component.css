@@ -1,0 +1,17 @@
+nav{
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.655);
+    
+}
+.logo{
+    width: 30%;
+    font-size: 40px;
+    margin-left: 20px;
+}
+.slogan{
+    width: 70%;
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
+}

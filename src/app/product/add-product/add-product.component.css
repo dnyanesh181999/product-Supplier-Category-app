@@ -1,0 +1,43 @@
+.maininput{
+    padding: 10px;
+}
+frm{
+    width: 50%;
+}
+input{
+    width: 500px;
+    margin: 20px auto;
+    border: 3px solid rgba(47, 99, 255, 0.641);
+}
+.btn1{
+    margin-left: 690px;
+    
+}
+select{
+    width: 35%;
+    height: 30px;
+    text-align: center;
+    margin-left: 470px;
+    border-radius: 8px 8px 8px 8px;
+}
+.btnh{
+    display: flex;
+    margin-left: 670px;
+    margin-top: 20px;
+}
+.btnh button{
+    margin-left: 20px;
+}
+.btnhb{
+    display: flex;
+    margin-left: 595px;
+    margin-top: 20px;
+}
+.btnhb button{
+    margin-left: 20px;
+}
+h2{
+    color: rgba(255, 255, 255, 0.656);
+    margin-left: 600px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

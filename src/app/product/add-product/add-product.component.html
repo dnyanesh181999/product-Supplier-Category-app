@@ -1,0 +1,55 @@
+
+<form [formGroup]="frm" class="mt-5">
+
+    <div class="maininput">
+      <div *ngIf="count==1 || count==5">
+        <input type="hidden" formControlName="productId">
+        <h2 class="">Product Details</h2>
+        <input type="text" class="form-control" placeholder="Enter the product name" formControlName="productName">
+        <input type="text" class="form-control" placeholder="Enter the product price" formControlName="productPrice">
+      <div class="btn1">
+        <button *ngIf="count==1" class="btn btn-primary" (click)="next()">NEXT</button>
+      </div>
+      </div>
+        
+
+
+    <div formGroupName="supplier" *ngIf="count==2 || count==5">
+        <h2 class="">Supplier Details</h2>
+        <select class="dropdown-menu-lg-end" formControlName="supplierId">
+                <option label="Choose one Supplier" selected disabled>Choose one Supplier</option>
+                <option class="dropdown-item form-control"  *ngFor="let a of supplier" value="{{a.supplierId}}">{{a.supplierName}}</option>
+           
+    
+        </select>
+       
+            <div class="btnh">
+                <button *ngIf="count==2" class="btn btn-primary"  (click)="next()">NEXT</button>
+            <button *ngIf="count==2" class="btn btn-danger" (click)="previous()">Previous</button>
+            </div>
+       
+    </div>
+
+
+
+
+
+    <div formGroupName="category" *ngIf="count==3 || count==5">
+        <h2 class="">Category Details</h2>
+        <select class="dropdown-menu-lg-end" formControlName="categoryId">
+                <option label="Choose one Supplier" selected disabled>Choose one Category</option>
+                <option class="dropdown-item form-control"  *ngFor="let b of category" value="{{b.categoryId}}">{{b.categoryType}}</option>
+           
+    
+        </select>
+    </div>
+
+
+<div class="btnhb">
+    <button *ngIf="count==3 || count==5" class="btn btn-primary btn-lg" (click)="onSubmit()">SUBMIT</button>
+    <button *ngIf="count==3" class="btn btn-danger" (click)="previous()">PREVIOUS</button>
+
+    <button *ngIf="count==3" class="btn btn-info" (click)="preview()">PREVIEW</button>
+</div>
+ </div>
+</form>

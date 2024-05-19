@@ -1,0 +1,26 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Product Name</th>
+     
+        <th>Product Price</th>
+        <th>Supplier Name</th>
+        <th>Supllier Contact</th>
+        <th>Supllier Address</th>
+        <th>Category</th>
+        <th>EDIT</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let a of prod">
+        <td>{{a.productName}}</td>
+        
+        <td>{{a.productPrice}}</td>
+        <td>{{a.supplier.supplierName}}</td>
+        <td>{{a.supplier.supplierContact}}</td>
+        <td>{{a.supplier.supplierAddress}}</td>
+        <td>{{a.category.categoryType}}</td>
+        <td><button class="btn btn-info" (click)="onEdit(a.productId)"><i class="fa fa-pencil" aria-hidden="true"></i></button></td>
+    </tr>
+    </tbody>
+</table>

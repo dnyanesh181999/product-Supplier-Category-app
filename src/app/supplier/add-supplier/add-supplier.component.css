@@ -1,0 +1,14 @@
+.maininput{
+    padding: 10px;
+}
+frm{
+    width: 50%;
+}
+input{
+    width: 500px;
+    margin: 20px auto;
+    border: 3px solid rgba(47, 99, 255, 0.641);
+}
+button{
+    margin-left: 690px;
+}

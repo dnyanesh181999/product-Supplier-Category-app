@@ -1,0 +1,11 @@
+<form [formGroup]="frm" class="mt-5">
+   <div class="maininput">
+    <input type="hidden" formControlName="supplierId">
+    <input type="text" class="form-control" placeholder="Enter the Supplier Name" formControlName="supplierName">
+    <input type="text" class="form-control" placeholder="Enter the Supplier Email" formControlName="supplierEmail">
+    <input type="text" class="form-control" placeholder="Enter the supplier contact" formControlName="supplierContact">
+    <input type="text" class="form-control" placeholder="Enter the Supplier Address" formControlName="supplierAddress">
+   </div>
+    <button class="btn btn-primary" (click)="onSubmit()">SUBMIT</button>
+
+</form>
