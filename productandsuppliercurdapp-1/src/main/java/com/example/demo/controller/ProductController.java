@@ -73,6 +73,7 @@ public Product updateProduct(@RequestBody Product prod,@PathVariable Integer pro
 	
 	prod.setCategory(c);
 	Product p=hs.updateProduct(prod);
+	System.out.println("Hello");
 	return p;
 }
 
