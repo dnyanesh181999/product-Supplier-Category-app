@@ -26,7 +26,8 @@ ngOnInit(): void {
 }
 
 onSubmit(){
-  alert("Conform")
+  alert("Are you sure to sumbit data")
   this.ser.saveSupplier(this.frm.value).subscribe()
+  window.location.reload();
 }
 }

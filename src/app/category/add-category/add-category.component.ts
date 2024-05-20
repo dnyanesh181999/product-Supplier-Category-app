@@ -21,6 +21,8 @@ frm:FormGroup;
   }
   onSubmit(){
     alert("Are you sure to save Category")
+    console.log("Changes")
     this.ps.saveCategory(this.frm.value).subscribe();
+    window.location.reload();
   }
 }

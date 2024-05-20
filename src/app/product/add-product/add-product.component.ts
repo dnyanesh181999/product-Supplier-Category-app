@@ -45,10 +45,11 @@ this.ss.getAllCategory().subscribe((resp:Category[])=>{
 
 onSubmit(){
 if(!this.flag){
-  console.log(this.frm.value)
+ alert("Are you sure to sumit data")
   this.ss.saveProduct(this.frm.value).subscribe();
 }
 else{
+  alert("Are you sure to sumbit data")
   this.ss.updateProduct(this.frm.value).subscribe();
 }
 this.frm.reset();
@@ -76,7 +77,7 @@ previous(){
 preview(){
 
   this.count=5;
-  alert(this.count)
+  
 }
 
 }
